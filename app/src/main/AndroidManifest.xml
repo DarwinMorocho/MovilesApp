@@ -18,12 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Artistas" />
         <activity android:name=".Generos" />
         <activity android:name=".Canciones" />
         <activity android:name=".Informacion" />
         <activity android:name=".Buscar" />
-        <activity android:name=".CrearNuevoArtista"></activity>
+        <activity android:name=".CrearNuevoArtista" />
+        <activity
+            android:name=".Artistas"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

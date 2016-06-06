@@ -21,8 +21,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/activity_artistas" />
-    <!--<include layout="@layout/activity_artistas" />-->
+    <include layout="@layout/content_artistas2" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabArtistas"
