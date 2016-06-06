@@ -19,14 +19,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".Generos" />
-        <activity android:name=".Canciones" />
         <activity android:name=".Informacion" />
         <activity android:name=".Buscar" />
         <activity android:name=".CrearNuevoArtista" />
         <activity
             android:name=".Artistas"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Canciones"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CrearNuevaCancion"></activity>
     </application>
 
 </manifest>
