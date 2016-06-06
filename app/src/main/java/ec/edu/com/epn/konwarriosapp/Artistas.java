@@ -22,5 +22,4 @@ public class Artistas extends AppCompatActivity {
         Intent llamadoCrear = new Intent(this, CrearNuevoArtista.class);
         startActivity(llamadoCrear);
     }
-
 }
