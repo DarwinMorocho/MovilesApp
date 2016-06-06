@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_artistas"
+            android:icon="@drawable/ic_account_box_black_24dp"
+            android:title="Artistas" />
+        <item
+            android:id="@+id/nav_generos"
+            android:icon="@drawable/ic_album_black_24dp"
+            android:title="Generos" />
+        <item
+            android:id="@+id/nav_canciones"
+            android:icon="@drawable/ic_library_music_black_24dp"
+            android:title="Canciones" />
+        <item
+            android:id="@+id/nav_buscador"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Buscador" />
+        <item
+            android:id="@+id/nav_crearartistas"
+            android:icon="@drawable/ic_fiber_new_black_24dp"
+            android:title="CrearArtistas" />
+    </group>
+
+    <item android:title="Información">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />-->
+            <item
+                android:id="@+id/nav_creditos"
+                android:icon="@drawable/ic_perm_device_information_black_24dp"
+                android:title="Créditos" />
+        </menu>
+    </item>
+
+</menu>
