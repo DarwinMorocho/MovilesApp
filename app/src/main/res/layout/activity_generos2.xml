@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="ec.edu.com.epn.konwarriosapp.Canciones">
+    tools:context="ec.edu.com.epn.konwarriosapp.Generos">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,17 +21,16 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_canciones2" />
+    <include layout="@layout/content_generos2" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabCanciones"
+        android:id="@+id/fabGeneros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_queue_music_black_24dp"
+        android:src="@drawable/ic_queue_black_24dp"
         android:backgroundTint="#0b6cda"
-        android:onClick="abrirCrearCancion"/>
-
+        android:onClick="abrirCrearGenero"/>
 
 </android.support.design.widget.CoordinatorLayout>
