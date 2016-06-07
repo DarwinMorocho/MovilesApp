@@ -30,11 +30,7 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CrearNuevaCancion" />
-        <activity android:name=".CrearNuevoGenero" />
-        <activity
-            android:name=".Generos"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Generos"></activity>
     </application>
 
 </manifest>

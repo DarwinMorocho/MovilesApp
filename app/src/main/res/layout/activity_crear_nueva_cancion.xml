@@ -9,4 +9,75 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ec.edu.com.epn.konwarriosapp.CrearNuevaCancion">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:text="@string/tituloCrearCancion"
+        android:id="@+id/textView3"
+        android:textColor="#0b0b0b"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombreCancion"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:id="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/ETNombreArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent_material_light"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/album"
+        android:id="@+id/textView6"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/ETNombreArtista"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/ETAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent_material_light"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/ETAnio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="guardarArtista"
+        android:text="@string/guardarCancion"
+        android:layout_alignParentBottom="true"        android:layout_alignParentStart="true"
+        android:id="@+id/buttonGuardarCancion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/anio"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

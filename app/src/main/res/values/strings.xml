@@ -25,7 +25,7 @@
     <string name="tituloCrearCancion">Crear Canción</string>
     <string name="nombreCancion">Nombre Canción:</string>
     <string name="album">Álbum:</string>
-    <string name="año">Año:</string>
+    <string name="anio">Año:</string>
     <string name="guardarCancion">Guardar Cancion</string>
 
     <string name="carlos">Carlos Cargua</string>

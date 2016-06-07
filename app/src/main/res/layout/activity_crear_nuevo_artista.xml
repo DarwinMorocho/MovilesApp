@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/accent_material_light"
         android:layout_below="@+id/textView7"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"/>
 
 
 
