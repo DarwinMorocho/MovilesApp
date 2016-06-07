@@ -31,4 +31,40 @@ public class KonWarriorsAppContract {
 
     public static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + TablaArtistas.NOMBRE_TABLA;
+
+    public static abstract class TablaCanciones implements BaseColumns {
+
+        public static final String NOMBRE_TABLA_CANCIONES="CANCIONES";
+        public static final String COLUMNA_NOMBRE_CANCION="NOMBRECANCION";
+        public static final String COLUMNA_ALBUM="ALBUM";
+        public static final String COLUMNA_ANIO="ANIO";
+    }
+
+    public static final String SQL_CREATE_ENTRIES_CANCION =
+            "CREATE TABLE " +
+                    TablaCanciones.NOMBRE_TABLA_CANCIONES +" (" +
+                    TablaCanciones._ID + INTEGER_TYPE + " PRIMARY KEY AUTOINCREMENT "+ COMMA_SEP +
+                    TablaCanciones.COLUMNA_NOMBRE_CANCION+ TEXT_TYPE + COMMA_SEP +
+                    TablaCanciones.COLUMNA_ALBUM + TEXT_TYPE + COMMA_SEP +
+                    TablaCanciones.COLUMNA_ANIO + INTEGER_TYPE +
+                    " )";
+
+    public static final String SQL_DELETE_ENTRIES_CANCION =
+            "DROP TABLE IF EXISTS " + TablaCanciones.NOMBRE_TABLA_CANCIONES;
+
+    public static abstract class TablaGeneros implements BaseColumns {
+
+        public static final String NOMBRE_TABLA="CANCIONES";
+        public static final String COLUMNA_NOMBRE_GENERO="NOMBREGENERO";
+    }
+
+    public static final String SQL_CREATE_ENTRIES_GENERO =
+            "CREATE TABLE " +
+                    TablaGeneros.NOMBRE_TABLA +" (" +
+                    TablaGeneros._ID + INTEGER_TYPE + " PRIMARY KEY AUTOINCREMENT "+ COMMA_SEP +
+                    TablaGeneros.COLUMNA_NOMBRE_GENERO+ TEXT_TYPE +
+                    " )";
+
+    public static final String SQL_DELETE_ENTRIES_GENERO =
+            "DROP TABLE IF EXISTS " + TablaGeneros.NOMBRE_TABLA;
 }

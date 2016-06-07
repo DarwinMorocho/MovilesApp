@@ -1,7 +1,9 @@
 package ec.edu.com.epn.konwarriosapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class CrearNuevaCancion extends AppCompatActivity {
 
@@ -16,4 +18,10 @@ public class CrearNuevaCancion extends AppCompatActivity {
         super.onRestart();
         setContentView(R.layout.activity_crear_nueva_cancion);
     }
+
+    public void abrirCrearCancion(View view){
+        Intent llamadoCrear = new Intent(this, CrearNuevaCancion.class);
+        startActivity(llamadoCrear);
+    }
+
 }

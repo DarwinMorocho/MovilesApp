@@ -19,6 +19,8 @@ public class KonWarriorsAppHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(KonWarriorsAppContract.SQL_CREATE_ENTRIES);
+        db.execSQL(KonWarriorsAppContract.SQL_CREATE_ENTRIES_CANCION);
+        db.execSQL(KonWarriorsAppContract.SQL_CREATE_ENTRIES_GENERO);
     }
 
     @Override
@@ -26,7 +28,11 @@ public class KonWarriorsAppHelper extends SQLiteOpenHelper {
 
         if (newVersion > oldVersion) {
             db.execSQL(KonWarriorsAppContract.SQL_DELETE_ENTRIES);
+            db.execSQL(KonWarriorsAppContract.SQL_DELETE_ENTRIES_CANCION);
+            db.execSQL(KonWarriorsAppContract.SQL_DELETE_ENTRIES_GENERO);
             db.execSQL(KonWarriorsAppContract.SQL_CREATE_ENTRIES);
+            db.execSQL(KonWarriorsAppContract.SQL_CREATE_ENTRIES_CANCION);
+            db.execSQL(KonWarriorsAppContract.SQL_CREATE_ENTRIES_GENERO);
         }
 
     }

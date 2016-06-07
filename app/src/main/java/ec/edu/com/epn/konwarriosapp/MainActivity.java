@@ -89,7 +89,8 @@ public class MainActivity extends AppCompatActivity
             Intent llamadoGeneros = new Intent(this, Generos.class);
             startActivity(llamadoGeneros);
         } else if (id == R.id.nav_canciones) {
-            Intent llamadoCanciones = new Intent(this, Canciones.class);
+            //Intent llamadoCanciones = new Intent(this, Canciones.class);
+            Intent llamadoCanciones = new Intent(this, CrearNuevaCancion.class);
             startActivity(llamadoCanciones);
         } else if (id == R.id.nav_crearartistas) {
             Intent llamadoCrear = new Intent(this, CrearNuevoArtista.class);
@@ -109,6 +110,11 @@ public class MainActivity extends AppCompatActivity
 
     public void abrirCrearArtista(View view){
         Intent llamadoCrear = new Intent(this, CrearNuevoArtista.class);
+        startActivity(llamadoCrear);
+    }
+
+    public void abrirCrearCancion(View view){
+        Intent llamadoCrear = new Intent(this, CrearNuevaCancion.class);
         startActivity(llamadoCrear);
     }
 }
