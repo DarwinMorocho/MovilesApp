@@ -62,11 +62,11 @@
         android:id="@+id/buttonGuardarArtista" />
 
     <Button
+        android:id="@+id/buttonCrearCancionAr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="abrirCrearCancion"
+        android:onClick="abrirCrearCancionNueva"
         android:drawableEnd="@android:drawable/ic_menu_add"
-        android:id="@+id/buttonCrearCancionAr"
         android:text="Nueva Canción"
         android:layout_centerVertical="true"
         android:layout_alignParentEnd="true" />

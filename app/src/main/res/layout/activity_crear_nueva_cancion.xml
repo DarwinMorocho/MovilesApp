@@ -28,7 +28,7 @@
         android:id="@+id/textView5" />
 
     <EditText
-        android:id="@+id/ETNombreArtista"
+        android:id="@+id/ETNombreCancion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/accent_material_light"
@@ -42,7 +42,7 @@
         android:text="@string/album"
         android:id="@+id/textView6"
         android:layout_marginTop="46dp"
-        android:layout_below="@+id/ETNombreArtista"
+        android:layout_below="@+id/ETNombreCancion"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -66,7 +66,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="guardarArtista"
+        android:onClick="guardarCancion"
         android:text="@string/guardarCancion"
         android:layout_alignParentBottom="true"        android:layout_alignParentStart="true"
         android:id="@+id/buttonGuardarCancion" />

@@ -81,7 +81,7 @@ public class Artistas extends AppCompatActivity {
             String cancion = cur.getString(2);
             a.setCancion(cancion);
             String descripcion = cur.getString(3);
-            a.setGenero(descripcion);
+            a.setDescripcionBanda(descripcion);
             artista.add(a);
         }
 
@@ -92,6 +92,11 @@ public class Artistas extends AppCompatActivity {
 
     public void abrirCrearArtista(View view){
         Intent llamadoCrear = new Intent(this, CrearNuevoArtista.class);
+        startActivity(llamadoCrear);
+    }
+
+    public void abrirCrearCancionNueva(View view){
+        Intent llamadoCrear = new Intent(this, CrearNuevaCancion.class);
         startActivity(llamadoCrear);
     }
 

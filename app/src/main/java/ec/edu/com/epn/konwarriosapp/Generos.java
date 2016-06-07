@@ -43,16 +43,28 @@ public class Generos extends AppCompatActivity {
 
         List<GeneroVO> genero = new ArrayList<GeneroVO>();
 
-        /*AlarmaVO alarma1 = new AlarmaVO("Examen", 6, 00, "PM",false);
-        alarmas.add(alarma1);
+        GeneroVO genero1 = new GeneroVO("Heavy Metal");
+        genero.add(genero1);
 
-        AlarmaVO alarma2 = new AlarmaVO("Cine", 1, 00, "PM",true);
-        alarmas.add(alarma2);
+        GeneroVO genero2 = new GeneroVO("Thrash Metal");
+        genero.add(genero2);
 
-        AlarmaVO alarma3 = new AlarmaVO("Fútbol", 9, 00, "AM",true);
-        alarmas.add(alarma3);/*/
+        GeneroVO genero3 = new GeneroVO("Power Metal");
+        genero.add(genero3);
 
-        KonWarriorsAppHelper oh = new KonWarriorsAppHelper(getApplicationContext());
+        GeneroVO genero4 = new GeneroVO("Rock");
+        genero.add(genero4);
+
+        GeneroVO genero5 = new GeneroVO("Hard Rock");
+        genero.add(genero5);
+
+        GeneroVO genero6 = new GeneroVO("Heavy Rock");
+        genero.add(genero6);
+
+        GeneroVO genero7 = new GeneroVO("Glam Metal");
+        genero.add(genero7);
+
+        /*KonWarriorsAppHelper oh = new KonWarriorsAppHelper(getApplicationContext());
         SQLiteDatabase db = oh.getReadableDatabase();
 
         String[]columnas = {KonWarriorsAppContract.TablaGeneros.COLUMNA_NOMBRE_GENERO};
@@ -65,7 +77,7 @@ public class Generos extends AppCompatActivity {
             String nombre = cur.getString(0);
             a.setNombreGenero(nombre);
             genero.add(a);
-        }
+        }*/
 
         GeneroAdaptador adaptador = new GeneroAdaptador(this,genero);
 

@@ -11,12 +11,14 @@
         <TextView
             android:id="@+id/lblTituloArtista"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#0b0b0b"/>
 
         <TextView
-                android:id="@+id/lblGenero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            android:id="@+id/lblGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/lblCancion"

@@ -11,7 +11,9 @@
         <TextView
             android:id="@+id/lblTituloCancion"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#0b0b0b"/>
 
         <LinearLayout
             android:orientation="horizontal"
