@@ -18,11 +18,20 @@
         android:id="@+id/tvGeneros"
         android:textColor="#0b0b0b" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloCrearGenero"
+        android:id="@+id/buttonCrearGenero"
+        android:onClick="abrirCrearGenero"
+        android:layout_below="@+id/tvGeneros"
+        android:layout_alignParentStart="true" />
+
     <ListView
         android:id="@+id/lvGeneros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvGeneros"
+        android:layout_below="@+id/buttonCrearGenero"
         android:layout_alignParentStart="true"></ListView>
 
 </RelativeLayout>

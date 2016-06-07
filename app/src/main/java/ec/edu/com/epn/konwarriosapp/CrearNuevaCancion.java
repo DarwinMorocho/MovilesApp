@@ -23,15 +23,21 @@ public class CrearNuevaCancion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_nueva_cancion);
 
-        txtNombreCancion=(EditText)findViewById(R.id.ETNombreCancion);
-        txtAlbum=(EditText)findViewById(R.id.ETAlbum);
-        numAnio=(EditText)findViewById(R.id.ETAnio);
+        crearNuevaCancionMetodo();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
         setContentView(R.layout.activity_crear_nueva_cancion);
+
+        crearNuevaCancionMetodo();
+    }
+
+    public void crearNuevaCancionMetodo(){
+        txtNombreCancion=(EditText)findViewById(R.id.ETNombreCancion);
+        txtAlbum=(EditText)findViewById(R.id.ETAlbum);
+        numAnio=(EditText)findViewById(R.id.ETAnio);
     }
 
     public void guardarCancion(View view){
@@ -46,8 +52,8 @@ public class CrearNuevaCancion extends AppCompatActivity {
         db.insert(KonWarriorsAppContract.TablaCanciones.NOMBRE_TABLA_CANCIONES, null, valores);
         db.close();
 
-        //Intent llamadoCanciones = new Intent(this, Canciones.class);
-        //startActivity(llamadoCanciones);
+        Intent llamadoCanciones = new Intent(this, Canciones.class);
+        startActivity(llamadoCanciones);
     }
 
 }

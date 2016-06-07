@@ -28,23 +28,25 @@ public class Canciones extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_canciones2);
+        setContentView(R.layout.activity_canciones);
+        //setContentView(R.layout.activity_canciones2);
 
         CargarDatosCancion();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarC);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarC);
+        //setSupportActionBar(toolbar);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        setContentView(R.layout.activity_canciones2);
+        setContentView(R.layout.activity_canciones);
+        //setContentView(R.layout.activity_canciones2);
 
         CargarDatosCancion();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarC);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarC);
+        //setSupportActionBar(toolbar);
     }
 
     public void CargarDatosCancion(){
@@ -89,5 +91,9 @@ public class Canciones extends AppCompatActivity {
         lvActividades.setAdapter(adaptador);
     }
 
+    public void abrirCrearCancion(View view){
+        Intent llamadoCrear = new Intent(this, CrearNuevaCancion.class);
+        startActivity(llamadoCrear);
+    }
 
 }

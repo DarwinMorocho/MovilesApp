@@ -43,7 +43,7 @@ public class CancionAdaptador extends ArrayAdapter {
         String albumStr = "Álbum : "+cancion.getAlbum();
         album.setText(albumStr);
 
-        String anioStr = "Año : "+cancion.getAnio();
+        String anioStr = "      Año : "+cancion.getAnio();
         anio.setText(anioStr);
 
         return view;

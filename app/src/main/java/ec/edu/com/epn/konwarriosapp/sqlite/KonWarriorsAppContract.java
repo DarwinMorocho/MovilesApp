@@ -44,7 +44,7 @@ public class KonWarriorsAppContract {
             "CREATE TABLE " +
                     TablaCanciones.NOMBRE_TABLA_CANCIONES +" (" +
                     TablaCanciones._ID + INTEGER_TYPE + " PRIMARY KEY AUTOINCREMENT "+ COMMA_SEP +
-                    TablaCanciones.COLUMNA_NOMBRE_CANCION+ TEXT_TYPE + COMMA_SEP +
+                    TablaCanciones.COLUMNA_NOMBRE_CANCION + TEXT_TYPE + COMMA_SEP +
                     TablaCanciones.COLUMNA_ALBUM + TEXT_TYPE + COMMA_SEP +
                     TablaCanciones.COLUMNA_ANIO + INTEGER_TYPE +
                     " )";
@@ -54,7 +54,7 @@ public class KonWarriorsAppContract {
 
     public static abstract class TablaGeneros implements BaseColumns {
 
-        public static final String NOMBRE_TABLA="CANCIONES";
+        public static final String NOMBRE_TABLA="GENERO";
         public static final String COLUMNA_NOMBRE_GENERO="NOMBREGENERO";
     }
 

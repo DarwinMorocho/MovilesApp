@@ -1,9 +1,11 @@
 package ec.edu.com.epn.konwarriosapp;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -43,7 +45,7 @@ public class Generos extends AppCompatActivity {
 
         List<GeneroVO> genero = new ArrayList<GeneroVO>();
 
-        GeneroVO genero1 = new GeneroVO("Heavy Metal");
+        /*GeneroVO genero1 = new GeneroVO("Heavy Metal");
         genero.add(genero1);
 
         GeneroVO genero2 = new GeneroVO("Thrash Metal");
@@ -62,9 +64,9 @@ public class Generos extends AppCompatActivity {
         genero.add(genero6);
 
         GeneroVO genero7 = new GeneroVO("Glam Metal");
-        genero.add(genero7);
+        genero.add(genero7);*/
 
-        /*KonWarriorsAppHelper oh = new KonWarriorsAppHelper(getApplicationContext());
+        KonWarriorsAppHelper oh = new KonWarriorsAppHelper(getApplicationContext());
         SQLiteDatabase db = oh.getReadableDatabase();
 
         String[]columnas = {KonWarriorsAppContract.TablaGeneros.COLUMNA_NOMBRE_GENERO};
@@ -77,11 +79,16 @@ public class Generos extends AppCompatActivity {
             String nombre = cur.getString(0);
             a.setNombreGenero(nombre);
             genero.add(a);
-        }*/
+        }
 
         GeneroAdaptador adaptador = new GeneroAdaptador(this,genero);
 
         lvActividades.setAdapter(adaptador);
+    }
+
+    public void abrirCrearGenero(View view){
+        Intent llamadoCrear = new Intent(this, CrearGenero.class);
+        startActivity(llamadoCrear);
     }
 
 }

@@ -95,9 +95,4 @@ public class Artistas extends AppCompatActivity {
         startActivity(llamadoCrear);
     }
 
-    public void abrirCrearCancionNueva(View view){
-        Intent llamadoCrear = new Intent(this, CrearNuevaCancion.class);
-        startActivity(llamadoCrear);
-    }
-
 }

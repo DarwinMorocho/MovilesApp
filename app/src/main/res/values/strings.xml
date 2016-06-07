@@ -28,6 +28,10 @@
     <string name="anio">Año:</string>
     <string name="guardarCancion">Guardar Cancion</string>
 
+    <string name="tituloCrearGenero">Crear Género</string>
+    <string name="nombreGenero">Nombre Género:</string>
+    <string name="guardarGenero">Guardar Género</string>
+
     <string name="carlos">Carlos Cargua</string>
     <string name="darwin">Darwin Morocho</string>
     <string name="jesus">Jesús Guerra</string>
