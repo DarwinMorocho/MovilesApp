@@ -10,4 +10,10 @@ public class Informacion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informacion);
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_informacion);
+    }
 }

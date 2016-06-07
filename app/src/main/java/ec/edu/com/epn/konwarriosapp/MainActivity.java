@@ -107,7 +107,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-
     public void abrirCrearArtista(View view){
         Intent llamadoCrear = new Intent(this, CrearNuevoArtista.class);
         startActivity(llamadoCrear);

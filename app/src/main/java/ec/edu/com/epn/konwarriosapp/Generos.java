@@ -10,4 +10,10 @@ public class Generos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_generos);
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_generos);
+    }
 }

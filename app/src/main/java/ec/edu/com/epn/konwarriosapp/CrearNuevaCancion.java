@@ -10,4 +10,10 @@ public class CrearNuevaCancion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_nueva_cancion);
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_crear_nueva_cancion);
+    }
 }

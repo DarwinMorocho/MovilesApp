@@ -18,6 +18,12 @@ public class Canciones extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_canciones2);
+    }
+
     public void abrirCrearCancion(View view){
         Intent llamadoCrear = new Intent(this, CrearNuevaCancion.class);
         startActivity(llamadoCrear);

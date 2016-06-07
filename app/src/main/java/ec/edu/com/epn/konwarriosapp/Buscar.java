@@ -10,4 +10,10 @@ public class Buscar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_buscar);
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_buscar);
+    }
 }

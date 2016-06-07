@@ -10,4 +10,10 @@ public class CrearNuevoArtista extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crear_nuevo_artista);
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(R.layout.activity_crear_nuevo_artista);
+    }
 }
