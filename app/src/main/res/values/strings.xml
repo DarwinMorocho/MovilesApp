@@ -14,7 +14,19 @@
     <string name="tituloCanciones">Canciones</string>
     <string name="tituloInfo">Créditos</string>
     <string name="tituloBuscar">Buscar</string>
-    <string name="tituloCrear">Crear Artistas</string>
+
+    <string name="tituloCrearArtista">Crear Artista</string>
+    <string name="nombreArtista">Nombre Artista o Banda:</string>
+    <string name="géneroArtista">Género:</string>
+    <string name="canciones">Ingresar Canciones Representativas:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="guardarArtista">Guardar Artista</string>
+
+    <string name="tituloCrearCancion">Crear Canción</string>
+    <string name="nombreCancion">Nombre Canción:</string>
+    <string name="album">Álbum:</string>
+    <string name="año">Año:</string>
+    <string name="guardarCancion">Guardar Cancion</string>
 
     <string name="carlos">Carlos Cargua</string>
     <string name="darwin">Darwin Morocho</string>

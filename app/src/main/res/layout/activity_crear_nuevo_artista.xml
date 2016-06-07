@@ -9,4 +9,94 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ec.edu.com.epn.konwarriosapp.CrearNuevoArtista">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:text="@string/tituloCrearArtista"
+        android:id="@+id/textView3"
+        android:textColor="#0b0b0b"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombreArtista"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:id="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/ETNombreArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent_material_light"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/géneroArtista"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <Spinner
+        android:id="@+id/cmbGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"></Spinner>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="guardarArtista"
+        android:text="@string/guardarArtista"
+        android:layout_alignParentBottom="true"        android:layout_alignParentStart="true"
+        android:id="@+id/buttonGuardarArtista" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="abrirCrearCancion"
+        android:drawableEnd="@android:drawable/ic_menu_add"
+        android:id="@+id/buttonCrearCancionAr"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:text="Nueva Canción"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Agregar Canción:"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Descripción:"
+        android:layout_below="@+id/buttonCrearCancionAr"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/ETDescripcionArtista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent_material_light"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+
+
 </RelativeLayout>
